@@ -17,8 +17,8 @@ namespace superpase
             {
                 MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
                 builder.Server = "localhost";
-                builder.UserID = "root";
-                builder.Password = "34syS0ft";
+                builder.UserID = "sp";
+                builder.Password = "super";
                 builder.Database = "superpase";
 
 

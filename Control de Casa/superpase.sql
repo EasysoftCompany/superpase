@@ -1,5 +1,11 @@
+
+
 create database superpase;
 use superpase;
+
+CREATE USER 'sp'@'localhost' IDENTIFIED BY 'super';
+GRANT ALL PRIVILEGES ON  superpase.* TO 'sp'@'localhost';
+
 create table login (user_rfid varchar(12),user_name varchar(100),user_ap varchar(100),user_am varchar(100),user_boleta varchar(10));
 create table asistencia(user_rfid varchar(12),fecha timestamp);
 
