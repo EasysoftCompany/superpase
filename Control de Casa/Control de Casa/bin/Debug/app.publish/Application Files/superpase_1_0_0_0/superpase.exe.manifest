@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="superpase.exe" version="1.0.0.0" publicKeyToken="f54c4b3957447d61" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="superpase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="superpase.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="4059136">
+      <assemblyIdentity name="itextsharp" version="5.5.10.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sMuANLVD/qDi+h6UlWBHrb4CHdSrUiq1s83Ekk3rO14=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="424448">
+      <assemblyIdentity name="MySql.Data" version="6.9.9.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z1JCyodj5/UiC37FF0m11VPrQRt8tszqKfa8jk+yNYc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="superpase.exe" size="101344">
+      <assemblyIdentity name="superpase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FjjLhiTJplAtP3uIjHBmdUb9Wze/cUlvT3qmeyLaaUI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="superpase.exe.config" size="182">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PbQiHFOih9uz3RPvvsStiPKcsu3PE8/gyCn2QGUyyf4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-63UQN2GA\g_ric" issuerKeyHash="8392741ee9b75b415bf5220dac85c3fab7ce06de" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>uAJThO/qRwLPsnB9OVu9PDCENdCCItFh96hpyF7LGBw=</DigestValue></Reference></SignedInfo><SignatureValue>nCdXIhwME1by/f125U86No5/DU7gRg2InOzICoTvB3/2YsfONQIsR5jHDz1YoSQH+elnGE1I8apv09xB1SXn44cB2DP7QKf9JmcAAf1a/cbaZ18xR0xsyvdYdOyCyPC1VCRm4DTIEWE28OQ8BTw4++YTmchNnkCRJ4nLIKZJfvA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s+9XseBujQI7fadgxcaKGMvrIPd4PhPkbE60kod6oHdIL060bwxP+DmqiQTkTOcFAfemcvBO23U3Kqvk9ljCYk309V9DrE1Mkl7wdY6wvKYiQK1xrkAb8xI0qiUYDanLBAxBLHInmvsE1fKC4AUyz7Dkk4qwknA/LBh94Gck6qM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1c18cb5ec869a8f761d12282d03584303cbd5b397d70b2cf0247eaef845302b8" Description="" Url=""><as:assemblyIdentity name="superpase.exe" version="1.0.0.0" publicKeyToken="f54c4b3957447d61" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-63UQN2GA\g_ric</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fiA1U/8HB/Ujl1r9sBVAOxHcAXwWggWkUTRrBk9gw9M=</DigestValue></Reference></SignedInfo><SignatureValue>n5k50Smdf8l/QGZ4vu/4+u3ypPssSNev3/XdSBeV14h2//eu5lylynxCYXtAWiyf8CohCXv3pxig8a9Yhe5cW2zHaevJRYpePJephbvJ1J7+i8ube/A8DHXX3eBCWly5n8dJ6xYZhGPVyrTwGdD7OEb0fc07jo4jKoNRm7OHWEs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s+9XseBujQI7fadgxcaKGMvrIPd4PhPkbE60kod6oHdIL060bwxP+DmqiQTkTOcFAfemcvBO23U3Kqvk9ljCYk309V9DrE1Mkl7wdY6wvKYiQK1xrkAb8xI0qiUYDanLBAxBLHInmvsE1fKC4AUyz7Dkk4qwknA/LBh94Gck6qM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQc/J7M0iRGpBD3DUL2rRsnzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQA2ADMAVQBRAE4AMgBHAEEAXABnAF8AcgBpAGMwHhcNMTYxMTE4MDIxNjUzWhcNMTcxMTE4MDgxNjUzWjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQA2ADMAVQBRAE4AMgBHAEEAXABnAF8AcgBpAGMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALPvV7Hgbo0CO32nYMXGihjL6yD3eD4T5GxOtJKHeqB3SC9OtG8MT/g5qokE5EznBQH3pnLwTtt1Nyqr5PZYwmJN9PVfQ6xNTJJe8HWOsLymIkCtca5AG/MSNKolGA2pywQMQSxyJ5r7BNXyguAFMs+w5JOKsJJwPywYfeBnJOqjAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAfFqcVdIuuei7QhQOz3ty8wBj52Sx8NZeMiElnhzFONisgF/zwlqj8W7rSEzWNwqiHWzqsUKCO389WIJU2V7Cs/9ur1IDfBx/umFAm++fNimOVF+qeRgeUx0P9/8XaMRyF/zlU1+KZXAmkybL9aBDck6aajl0mzqC0VrFwx/IfsM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
